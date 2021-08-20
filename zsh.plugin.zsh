@@ -9,3 +9,6 @@ if [[ "$commands[fasd]" -nt "$fasd_cache" || ! -s "$fasd_cache" ]]; then
 fi
 source "$fasd_cache"
 unset fasd_cache
+
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude={.git}'
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border"
