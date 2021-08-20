@@ -1,1 +1,4 @@
 #+title: my zsh configuration
+* prerequisites
+- [[https://github.com/clvv/fasd][fasd]]
+- [[https://github.com/junegunn/fzf][fzf]]

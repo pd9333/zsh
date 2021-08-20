@@ -1,0 +1,9 @@
+# -*- mode: sh -*-
+#
+# Find the most related directory in fasd and cd into it.
+
+local dir
+
+fasd -dl "$*" | fzf -1 | read -r dir
+[ -z "$dir" ] && return
+cd "$dir" || return
