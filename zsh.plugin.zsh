@@ -21,3 +21,4 @@ zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
 autoload -Uz z
+autoload -Uz e
