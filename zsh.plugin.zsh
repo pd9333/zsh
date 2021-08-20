@@ -14,3 +14,8 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude={.git}'
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border"
 
 export EDITOR=emacsclient
+
+# Ctrl-X Ctrl-E to call edit-command-line
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
