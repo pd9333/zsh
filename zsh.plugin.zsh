@@ -22,3 +22,4 @@ bindkey '^x^e' edit-command-line
 
 autoload -Uz z
 autoload -Uz e
+autoload -Uz take
