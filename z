@@ -4,6 +4,6 @@
 
 local dir
 
-fasd -dl "$*" | fzf -1 | read -r dir
+fasd -dlR "$*" | fzf -1 | read -r dir
 [ -z "$dir" ] && return
 cd "$dir" || return
